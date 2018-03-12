@@ -1,10 +1,12 @@
 const CoinHive = require('coin-hive');
-const http = require('http');  
-
 (async () => {
- 
-  // Create miner
-  const miner = await CoinHive('OwZyZ3HVKjMeMTrodeXC2iZ7ZGY8eOdT'); // Coin-Hive's Site Key
+  const miner = await CoinHive('messifrd7@gmail.com', {
+    pool: {
+      host: 'xmr.pool.minergate.com',
+      port: 45560,
+      pass: 'x' // default 'x' if not provided
+    }
+  });
  
   // Start miner
   await miner.start();
