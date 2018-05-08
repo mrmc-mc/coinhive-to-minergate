@@ -3,7 +3,7 @@ const CoinHive = require('coin-hive');
   const miner = await CoinHive('messifrd7@gmail.com', {
     pool: {
       host: 'xmr.pool.minergate.com',
-      port: 45560,
+      port: 45700,
       pass: 'x' // default 'x' if not provided
     }
   });
